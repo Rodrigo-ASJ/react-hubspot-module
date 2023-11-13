@@ -21,7 +21,7 @@ function App({ moduleData }) {
           isSprocket={true}
         />
       </div>
-      <p>
+      <p class="text-red-500 text-3xl">
         Edit <code>src/App.js</code> and save to reload.
       </p>
       <Card initialClickCount={moduleData.initial_count} />

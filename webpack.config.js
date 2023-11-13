@@ -18,10 +18,13 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
     optimization: {
       minimize: false,
     },
+    resolve: {
+      extensions: ['.js','.jsx'] //para que puead leer los jsx
+    },
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
@@ -65,6 +68,7 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
             from: 'src/modules',
             to: 'modules',
           },
+          {from: 'src/output.css', to: 'css'}
         ],
       }),
     ],
