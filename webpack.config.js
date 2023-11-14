@@ -19,7 +19,7 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
       minimize: false,
     },
     resolve: {
-      extensions: ['.js','.jsx'] //para que puead leer los jsx
+      extensions: ['.js','.jsx']
     },
     module: {
       rules: [
